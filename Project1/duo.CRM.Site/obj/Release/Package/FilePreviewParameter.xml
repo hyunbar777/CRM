@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="duoduo" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\work\\like\\Pratice\\MVC\\Project1\\duo\.CRM\.Site\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\work\\like\\Pratice\\MVC\\Project1\\duo\.CRM\.Site\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="ASPPROJECT1Entities-Web.config Connection String" description="" value="metadata=res://*/CRM.csdl|res://*/CRM.ssdl|res://*/CRM.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=PC-DUO;Initial Catalog=ASPPROJECT1;Integrated Security=True;MultipleActiveResultSets=True;Application Name=EntityFramework&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\work\\like\\Pratice\\MVC\\Project1\\duo\.CRM\.Site\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ASPPROJECT1Entities']/@connectionString" />
+  </parameter>
+</parameters>

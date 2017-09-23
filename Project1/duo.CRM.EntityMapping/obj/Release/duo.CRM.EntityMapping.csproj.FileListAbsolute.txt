@@ -1,0 +1,11 @@
+D:\work\like\Pratice\MVC\Project1\duo.CRM.EntityMapping\bin\Release\duo.CRM.EntityMapping.dll
+D:\work\like\Pratice\MVC\Project1\duo.CRM.EntityMapping\bin\Release\duo.CRM.EntityMapping.pdb
+D:\work\like\Pratice\MVC\Project1\duo.CRM.EntityMapping\bin\Release\AutoMapper.dll
+D:\work\like\Pratice\MVC\Project1\duo.CRM.EntityMapping\bin\Release\duo.CRM.Model.dll
+D:\work\like\Pratice\MVC\Project1\duo.CRM.EntityMapping\bin\Release\EntityFramework.dll
+D:\work\like\Pratice\MVC\Project1\duo.CRM.EntityMapping\bin\Release\duo.CRM.Model.pdb
+D:\work\like\Pratice\MVC\Project1\duo.CRM.EntityMapping\bin\Release\EntityFramework.xml
+D:\work\like\Pratice\MVC\Project1\duo.CRM.EntityMapping\bin\Release\zh-Hans\EntityFramework.resources.dll
+D:\work\like\Pratice\MVC\Project1\duo.CRM.EntityMapping\obj\Release\duo.CRM.EntityMapping.csprojResolveAssemblyReference.cache
+D:\work\like\Pratice\MVC\Project1\duo.CRM.EntityMapping\obj\Release\duo.CRM.EntityMapping.dll
+D:\work\like\Pratice\MVC\Project1\duo.CRM.EntityMapping\obj\Release\duo.CRM.EntityMapping.pdb

@@ -1,0 +1,125 @@
+﻿
+@{
+    Layout = null;
+}
+@using duo.CRM.WebHelper;
+@using duo.CRM.Model;
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style type="text/css">
+        .leftMenus li {
+            margin: 3px 0;
+        }
+    </style>
+    <script type="text/javascript">
+        var tab;
+        $(function () {
+            //1.0开始进行layout布局
+            $("#layout1").ligerLayout({
+                leftWidth: 200,
+
+            });
+            //2.0初始化左边菜单
+            $("#accordion1").ligerAccordion({
+                height: 450,
+
+            });
+            //初始化一个默认的tab我的工作台
+            tab=$("#tab1").ligerTab({
+                height:"100%"
+            });
+        })
+        function addTab(tabid,url,title)
+        {
+            tab.addTabItem({
+                tabid: tabid,//tab的唯一标识
+                url: url,//tab中iframe指向的url
+                text: title
+
+            });
+        }
+
+    </script>
+</head>
+<body>
+    <div>
+        <div id="layout1">
+            <div position="left">
+                <div id="accordion1" class="leftMenus">
+                    @*<div title="功能列表" data-icon="../../lib/images/topicon.gif">
+                            <ul>
+                                <li><a href="/Admin/Keyval/Index">数据字典管理</a></li>
+                                <li><a>列表一</a></li>
+                                <li><a>列表一</a></li>
+                                <li><a>列表一</a></li>
+                                <li><a>列表一</a></li>
+                            </ul>
+                        </div>*@
+                    @* 动态生成list菜单 *@
+                    @* 递归方法 *@
+                    @*@helper CreateLi(List<sysMenus> list1)
+                     {
+                     }
+                    *@
+                    @{
+                        //1.0从后台获取菜单集合
+                        var list = ViewBag.mlist as List<sysMenus>;
+                        //2.0遍历list中的一级菜单
+                        if (list != null && list.Any())
+                        {
+                            foreach (var i in list)
+                            {
+                                //一级菜单
+                                if (i.mParentID == -1)
+                                {
+                                    <div title="@i.mName">
+                                        @* 生成当前一级菜单的二级菜单 *@
+                                        <ul>
+                                            @foreach (var j in list)
+                                            {
+                                                //判断当前的item是否为menu。mid这个菜单的子菜单
+                                                if (j.mParentID == i.mID)
+                                                {
+                                                    <li>
+                                                        <a href="javascript:void(0)"
+                                                           onclick="addTab(@j.mID,'@j.mUrl','@j.mName')">
+                                                            @j.mName
+                                                        </a>
+                                                    </li>
+                                                }
+                                            }
+                                        </ul>
+                                    </div>
+                                }
+                            }
+                        }
+                    }
+                    <div title="其他" style="padding:10px">
+                        其他内容
+                    </div>
+                </div>
+            </div>
+            <div position="center" title="标题" id="tab1">
+                <div title="我的工作台">
+
+                </div>
+            </div>
+            <div position="right"></div>
+            <div position="top" class="top1">
+                <a href="#" class="title">CRM客户管理系统</a>
+                <ul>
+                    <li><img alt="" src="/Images/avatar.gif" style="height:29px;" /></li>
+                    <li>欢迎【@UserMgr.GetCurrentUserInfo().uRealName】登录</li>
+                    <li><a href="~/Areas/Admin/Login/Logout">退出</a></li>
+                </ul>
+            </div>
+            <div position="bottom"></div>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,272 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ASPPROJECT1ModelStoreContainer" CdmEntityContainer="ASPPROJECT1Entities">
+    <EntitySetMapping Name="sysFunction">
+      <EntityTypeMapping TypeName="ASPPROJECT1Model.sysFunction">
+        <MappingFragment StoreEntitySet="sysFunction">
+          <ScalarProperty Name="fID" ColumnName="fID" />
+          <ScalarProperty Name="mID" ColumnName="mID" />
+          <ScalarProperty Name="fName" ColumnName="fName" />
+          <ScalarProperty Name="fFunction" ColumnName="fFunction" />
+          <ScalarProperty Name="fPicName" ColumnName="fPicName" />
+          <ScalarProperty Name="fStatus" ColumnName="fStatus" />
+          <ScalarProperty Name="fCreateID" ColumnName="fCreateID" />
+          <ScalarProperty Name="fCreateTime" ColumnName="fCreateTime" />
+          <ScalarProperty Name="fUpdateID" ColumnName="fUpdateID" />
+          <ScalarProperty Name="fUpdateTime" ColumnName="fUpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysKeyValue">
+      <EntityTypeMapping TypeName="ASPPROJECT1Model.sysKeyValue">
+        <MappingFragment StoreEntitySet="sysKeyValue">
+          <ScalarProperty Name="KID" ColumnName="KID" />
+          <ScalarProperty Name="ParentID" ColumnName="ParentID" />
+          <ScalarProperty Name="KType" ColumnName="KType" />
+          <ScalarProperty Name="KName" ColumnName="KName" />
+          <ScalarProperty Name="KValue" ColumnName="KValue" />
+          <ScalarProperty Name="KRemark" ColumnName="KRemark" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysMenus">
+      <EntityTypeMapping TypeName="ASPPROJECT1Model.sysMenus">
+        <MappingFragment StoreEntitySet="sysMenus">
+          <ScalarProperty Name="mID" ColumnName="mID" />
+          <ScalarProperty Name="mParentID" ColumnName="mParentID" />
+          <ScalarProperty Name="mName" ColumnName="mName" />
+          <ScalarProperty Name="mUrl" ColumnName="mUrl" />
+          <ScalarProperty Name="mController" ColumnName="mController" />
+          <ScalarProperty Name="mArea" ColumnName="mArea" />
+          <ScalarProperty Name="mAction" ColumnName="mAction" />
+          <ScalarProperty Name="mSortID" ColumnName="mSortID" />
+          <ScalarProperty Name="mStatus" ColumnName="mStatus" />
+          <ScalarProperty Name="mPicture" ColumnName="mPicture" />
+          <ScalarProperty Name="mLevel" ColumnName="mLevel" />
+          <ScalarProperty Name="mExp1" ColumnName="mExp1" />
+          <ScalarProperty Name="mExp2" ColumnName="mExp2" />
+          <ScalarProperty Name="mCreateID" ColumnName="mCreateID" />
+          <ScalarProperty Name="mCreateTime" ColumnName="mCreateTime" />
+          <ScalarProperty Name="mUpdateID" ColumnName="mUpdateID" />
+          <ScalarProperty Name="mUpdateTime" ColumnName="mUpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysOrganStruct">
+      <EntityTypeMapping TypeName="ASPPROJECT1Model.sysOrganStruct">
+        <MappingFragment StoreEntitySet="sysOrganStruct">
+          <ScalarProperty Name="osID" ColumnName="osID" />
+          <ScalarProperty Name="osParentID" ColumnName="osParentID" />
+          <ScalarProperty Name="osName" ColumnName="osName" />
+          <ScalarProperty Name="osCode" ColumnName="osCode" />
+          <ScalarProperty Name="osCateID" ColumnName="osCateID" />
+          <ScalarProperty Name="osLevel" ColumnName="osLevel" />
+          <ScalarProperty Name="osShortName" ColumnName="osShortName" />
+          <ScalarProperty Name="osRemark" ColumnName="osRemark" />
+          <ScalarProperty Name="osStatus" ColumnName="osStatus" />
+          <ScalarProperty Name="osCreateID" ColumnName="osCreateID" />
+          <ScalarProperty Name="osCreateTime" ColumnName="osCreateTime" />
+          <ScalarProperty Name="osUpdateID" ColumnName="osUpdateID" />
+          <ScalarProperty Name="osUpdateTime" ColumnName="osUpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysPermissList">
+      <EntityTypeMapping TypeName="ASPPROJECT1Model.sysPermissList">
+        <MappingFragment StoreEntitySet="sysPermissList">
+          <ScalarProperty Name="plID" ColumnName="plID" />
+          <ScalarProperty Name="rID" ColumnName="rID" />
+          <ScalarProperty Name="mID" ColumnName="mID" />
+          <ScalarProperty Name="fID" ColumnName="fID" />
+          <ScalarProperty Name="plCreateID" ColumnName="plCreateID" />
+          <ScalarProperty Name="plCreateTime" ColumnName="plCreateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysRole">
+      <EntityTypeMapping TypeName="ASPPROJECT1Model.sysRole">
+        <MappingFragment StoreEntitySet="sysRole">
+          <ScalarProperty Name="rID" ColumnName="rID" />
+          <ScalarProperty Name="eDepID" ColumnName="eDepID" />
+          <ScalarProperty Name="RoleType" ColumnName="RoleType" />
+          <ScalarProperty Name="rName" ColumnName="rName" />
+          <ScalarProperty Name="rRemark" ColumnName="rRemark" />
+          <ScalarProperty Name="rSort" ColumnName="rSort" />
+          <ScalarProperty Name="rStatus" ColumnName="rStatus" />
+          <ScalarProperty Name="rCreateID" ColumnName="rCreateID" />
+          <ScalarProperty Name="rCreateTime" ColumnName="rCreateTime" />
+          <ScalarProperty Name="rUpdateID" ColumnName="rUpdateID" />
+          <ScalarProperty Name="rUpdateTime" ColumnName="rUpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysUserInfo">
+      <EntityTypeMapping TypeName="ASPPROJECT1Model.sysUserInfo">
+        <MappingFragment StoreEntitySet="sysUserInfo">
+          <ScalarProperty Name="uID" ColumnName="uID" />
+          <ScalarProperty Name="uLoginName" ColumnName="uLoginName" />
+          <ScalarProperty Name="uLoginPWD" ColumnName="uLoginPWD" />
+          <ScalarProperty Name="uRealName" ColumnName="uRealName" />
+          <ScalarProperty Name="uTelphone" ColumnName="uTelphone" />
+          <ScalarProperty Name="uMobile" ColumnName="uMobile" />
+          <ScalarProperty Name="uEmail" ColumnName="uEmail" />
+          <ScalarProperty Name="uQQ" ColumnName="uQQ" />
+          <ScalarProperty Name="uGender" ColumnName="uGender" />
+          <ScalarProperty Name="uStatus" ColumnName="uStatus" />
+          <ScalarProperty Name="uCompanyID" ColumnName="uCompanyID" />
+          <ScalarProperty Name="uDepID" ColumnName="uDepID" />
+          <ScalarProperty Name="uWorkGroup" ColumnName="uWorkGroup" />
+          <ScalarProperty Name="uRemark" ColumnName="uRemark" />
+          <ScalarProperty Name="uCreateID" ColumnName="uCreateID" />
+          <ScalarProperty Name="uCreateTime" ColumnName="uCreateTime" />
+          <ScalarProperty Name="uUpdateID" ColumnName="uUpdateID" />
+          <ScalarProperty Name="uUpdateTime" ColumnName="uUpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysUserInfo_Role">
+      <EntityTypeMapping TypeName="ASPPROJECT1Model.sysUserInfo_Role">
+        <MappingFragment StoreEntitySet="sysUserInfo_Role">
+          <ScalarProperty Name="urID" ColumnName="urID" />
+          <ScalarProperty Name="uID" ColumnName="uID" />
+          <ScalarProperty Name="rID" ColumnName="rID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wfProcess">
+      <EntityTypeMapping TypeName="ASPPROJECT1Model.wfProcess">
+        <MappingFragment StoreEntitySet="wfProcess">
+          <ScalarProperty Name="wfPID" ColumnName="wfPID" />
+          <ScalarProperty Name="wfRFID" ColumnName="wfRFID" />
+          <ScalarProperty Name="wfProcessor" ColumnName="wfProcessor" />
+          <ScalarProperty Name="wfRFStatus" ColumnName="wfRFStatus" />
+          <ScalarProperty Name="wfPDesription" ColumnName="wfPDesription" />
+          <ScalarProperty Name="wfnID" ColumnName="wfnID" />
+          <ScalarProperty Name="wfPExt1" ColumnName="wfPExt1" />
+          <ScalarProperty Name="wfPExt2" ColumnName="wfPExt2" />
+          <ScalarProperty Name="fCreateID" ColumnName="fCreateID" />
+          <ScalarProperty Name="fCreateTime" ColumnName="fCreateTime" />
+          <ScalarProperty Name="fUpdateID" ColumnName="fUpdateID" />
+          <ScalarProperty Name="fUpdateTime" ColumnName="fUpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wfRequestForm">
+      <EntityTypeMapping TypeName="ASPPROJECT1Model.wfRequestForm">
+        <MappingFragment StoreEntitySet="wfRequestForm">
+          <ScalarProperty Name="wfRFID" ColumnName="wfRFID" />
+          <ScalarProperty Name="wfID" ColumnName="wfID" />
+          <ScalarProperty Name="wfRFTitle" ColumnName="wfRFTitle" />
+          <ScalarProperty Name="wfRFRemark" ColumnName="wfRFRemark" />
+          <ScalarProperty Name="wfRFPriority" ColumnName="wfRFPriority" />
+          <ScalarProperty Name="wfRFStatus" ColumnName="wfRFStatus" />
+          <ScalarProperty Name="wfRFExt1" ColumnName="wfRFExt1" />
+          <ScalarProperty Name="wfRFExt2" ColumnName="wfRFExt2" />
+          <ScalarProperty Name="wfRFLogicSymbol" ColumnName="wfRFLogicSymbol" />
+          <ScalarProperty Name="wfRFNum" ColumnName="wfRFNum" />
+          <ScalarProperty Name="fCreateID" ColumnName="fCreateID" />
+          <ScalarProperty Name="fCreateTime" ColumnName="fCreateTime" />
+          <ScalarProperty Name="fUpdateID" ColumnName="fUpdateID" />
+          <ScalarProperty Name="fUpdateTime" ColumnName="fUpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wfWork">
+      <EntityTypeMapping TypeName="ASPPROJECT1Model.wfWork">
+        <MappingFragment StoreEntitySet="wfWork">
+          <ScalarProperty Name="wfID" ColumnName="wfID" />
+          <ScalarProperty Name="wfTitle" ColumnName="wfTitle" />
+          <ScalarProperty Name="wfStatus" ColumnName="wfStatus" />
+          <ScalarProperty Name="wfRemark" ColumnName="wfRemark" />
+          <ScalarProperty Name="fCreateID" ColumnName="fCreateID" />
+          <ScalarProperty Name="fCreateTime" ColumnName="fCreateTime" />
+          <ScalarProperty Name="fUpdateID" ColumnName="fUpdateID" />
+          <ScalarProperty Name="fUpdateTime" ColumnName="fUpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wfWorkBranch">
+      <EntityTypeMapping TypeName="ASPPROJECT1Model.wfWorkBranch">
+        <MappingFragment StoreEntitySet="wfWorkBranch">
+          <ScalarProperty Name="wfbID" ColumnName="wfbID" />
+          <ScalarProperty Name="wfnID" ColumnName="wfnID" />
+          <ScalarProperty Name="wfnToken" ColumnName="wfnToken" />
+          <ScalarProperty Name="wfNodeID" ColumnName="wfNodeID" />
+          <ScalarProperty Name="fCreateID" ColumnName="fCreateID" />
+          <ScalarProperty Name="fCreateTime" ColumnName="fCreateTime" />
+          <ScalarProperty Name="fUpdateID" ColumnName="fUpdateID" />
+          <ScalarProperty Name="fUpdateTime" ColumnName="fUpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="wfWorkNodes">
+      <EntityTypeMapping TypeName="ASPPROJECT1Model.wfWorkNodes">
+        <MappingFragment StoreEntitySet="wfWorkNodes">
+          <ScalarProperty Name="wfnID" ColumnName="wfnID" />
+          <ScalarProperty Name="wfID" ColumnName="wfID" />
+          <ScalarProperty Name="wfnOrderNo" ColumnName="wfnOrderNo" />
+          <ScalarProperty Name="wfNodeType" ColumnName="wfNodeType" />
+          <ScalarProperty Name="wfNodeTitle" ColumnName="wfNodeTitle" />
+          <ScalarProperty Name="wfnBizMethod" ColumnName="wfnBizMethod" />
+          <ScalarProperty Name="wfnMaxNum" ColumnName="wfnMaxNum" />
+          <ScalarProperty Name="wfnRoleType" ColumnName="wfnRoleType" />
+          <ScalarProperty Name="wfnExt1" ColumnName="wfnExt1" />
+          <ScalarProperty Name="wfnExt2" ColumnName="wfnExt2" />
+          <ScalarProperty Name="fCreateID" ColumnName="fCreateID" />
+          <ScalarProperty Name="fCreateTime" ColumnName="fCreateTime" />
+          <ScalarProperty Name="fUpdateID" ColumnName="fUpdateID" />
+          <ScalarProperty Name="fUpdateTime" ColumnName="fUpdateTime" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="Usp_GetFunctionsForUserid" FunctionName="ASPPROJECT1Model.Store.Usp_GetFunctionsForUserid">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ASPPROJECT1Model.Usp_GetFunctionsForUserid_Result">
+          <ScalarProperty Name="fName" ColumnName="fName" />
+          <ScalarProperty Name="fFunction" ColumnName="fFunction" />
+          <ScalarProperty Name="fPicName" ColumnName="fPicName" />
+          <ScalarProperty Name="mUrl" ColumnName="mUrl" />
+          <ScalarProperty Name="mArea" ColumnName="mArea" />
+          <ScalarProperty Name="mAction" ColumnName="mAction" />
+          <ScalarProperty Name="mController" ColumnName="mController" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Usp_GetFunctionsForUsers" FunctionName="ASPPROJECT1Model.Store.Usp_GetFunctionsForUsers">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ASPPROJECT1Model.Usp_GetFunctionsForUsers_Result">
+          <ScalarProperty Name="fName" ColumnName="fName" />
+          <ScalarProperty Name="fFunction" ColumnName="fFunction" />
+          <ScalarProperty Name="fPicName" ColumnName="fPicName" />
+          <ScalarProperty Name="mUrl" ColumnName="mUrl" />
+          <ScalarProperty Name="mArea" ColumnName="mArea" />
+          <ScalarProperty Name="mController" ColumnName="mController" />
+          <ScalarProperty Name="mAction" ColumnName="mAction" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="Usp_GetPermissMenusForUser" FunctionName="ASPPROJECT1Model.Store.Usp_GetPermissMenusForUser">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ASPPROJECT1Model.Usp_GetPermissMenusForUser_Result">
+          <ScalarProperty Name="mID" ColumnName="mID" />
+          <ScalarProperty Name="mParentID" ColumnName="mParentID" />
+          <ScalarProperty Name="mName" ColumnName="mName" />
+          <ScalarProperty Name="mUrl" ColumnName="mUrl" />
+          <ScalarProperty Name="mController" ColumnName="mController" />
+          <ScalarProperty Name="mArea" ColumnName="mArea" />
+          <ScalarProperty Name="mAction" ColumnName="mAction" />
+          <ScalarProperty Name="mSortID" ColumnName="mSortID" />
+          <ScalarProperty Name="mStatus" ColumnName="mStatus" />
+          <ScalarProperty Name="mPicture" ColumnName="mPicture" />
+          <ScalarProperty Name="mLevel" ColumnName="mLevel" />
+          <ScalarProperty Name="mExp1" ColumnName="mExp1" />
+          <ScalarProperty Name="mExp2" ColumnName="mExp2" />
+          <ScalarProperty Name="mCreateID" ColumnName="mCreateID" />
+          <ScalarProperty Name="mCreateTime" ColumnName="mCreateTime" />
+          <ScalarProperty Name="mUpdateID" ColumnName="mUpdateID" />
+          <ScalarProperty Name="mUpdateTime" ColumnName="mUpdateTime" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+  </EntityContainerMapping>
+</Mapping>

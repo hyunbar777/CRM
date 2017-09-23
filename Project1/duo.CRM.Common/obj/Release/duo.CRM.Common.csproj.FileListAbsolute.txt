@@ -1,0 +1,5 @@
+D:\work\like\Pratice\MVC\Project1\duo.CRM.Common\bin\Release\duo.CRM.Common.dll
+D:\work\like\Pratice\MVC\Project1\duo.CRM.Common\bin\Release\duo.CRM.Common.pdb
+D:\work\like\Pratice\MVC\Project1\duo.CRM.Common\obj\Release\duo.CRM.Common.csprojResolveAssemblyReference.cache
+D:\work\like\Pratice\MVC\Project1\duo.CRM.Common\obj\Release\duo.CRM.Common.dll
+D:\work\like\Pratice\MVC\Project1\duo.CRM.Common\obj\Release\duo.CRM.Common.pdb

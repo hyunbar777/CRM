@@ -1,0 +1,97 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <script type="text/javascript">
+        $(function () {
+            getlist();
+        })
+        //利用ligerGrid插件进行后台数据的获取工作，返回的json：{"Rows":[],"Total":}
+        function getlist(){
+            $("#list").ligerGrid({
+                columns: [
+                    { display: "编号", name: "KID" },
+                    { display: "字典类别", name: "KType" },
+                    { display: "字典名称", name: "KName" },
+                    { display: "字典值", name: "KValue" },
+                ],
+                //请求的url
+                url: "/Admin/Keyval/getlist",
+                //默认post
+                method: "post",
+                //不分页
+                usePager: false,
+                //将查询条件传入后台getlist
+                parms: [{ name: 'kname', value: $("#kname").val() }],
+                groupColumnName: 'KType', groupColumnDisplay: '分类',
+                toolbar: {
+                    items: [
+                    { text: '增加', click: itemclick, icon: 'add' },
+                    { line: true },
+                    { text: '修改', click: itemclick, icon: 'modify' },
+                    { line: true },
+                    { text: '删除', click: itemclick, img: '../../../lib/ligerUI/skins/icons/delete.gif' }
+                    ]
+                }
+            })
+        }
+    </script>
+</head>
+<body>
+    <div id="content">
+        <div id="content-header">
+            <div id="breadcrumb">
+                <a href="javascript:void(0)" title="首页"><i class="icon-home"></i>首页</a>
+                <a href="javascript:void(0)" title="系统管理"><i class="icon-road"></i>系统管理</a>
+                <a class="current" href="javascript:void(0)">数据字典管理</a>
+            </div>
+        </div>
+        <div style="height: 100%;">
+            <div id="content-body" class="row-fluid">
+                <div class="span22">
+                    <!--查询条件 -->
+                    <div class="widget-box">
+                        <div class="widget-title">
+                            <span class="icon"><i class="icon-search"></i></span>
+                            <h5>查询条件</h5>
+                        </div>
+                        <div class="widget-content nopadding">
+                            <form class="form-horizontal search-form" method="post" name="basic_validate" novalidate="novalidate">
+                                <div class="control-group">
+                                    <div class="search-group">
+                                        <label class="search-label">字典名称</label>
+                                        <div class="span2 search-input">
+                                            <input id="kname" name="kname" type="text" value="">
+                                        </div>
+                                        <button type="button" class="btn btn-success" onclick="getlist()" style="float: right; margin: 5px 10px 0 0;">
+                                            <span class="icon-search"></span>搜索
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <!--列表-->
+                    <div class="widget-box">
+                        <div class="widget-title">
+                            <span class="icon"><i class="icon-th"></i></span>
+                            <h5>字典列表</h5>
+                        </div>
+                        <div id="list" class="widget-content nopadding">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

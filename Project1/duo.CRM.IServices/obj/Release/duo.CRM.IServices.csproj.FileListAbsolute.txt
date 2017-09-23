@@ -1,0 +1,10 @@
+D:\work\like\Pratice\MVC\Project1\duo.CRM.IServices\bin\Release\duo.CRM.IServices.dll
+D:\work\like\Pratice\MVC\Project1\duo.CRM.IServices\bin\Release\duo.CRM.IServices.pdb
+D:\work\like\Pratice\MVC\Project1\duo.CRM.IServices\bin\Release\duo.CRM.Model.dll
+D:\work\like\Pratice\MVC\Project1\duo.CRM.IServices\bin\Release\EntityFramework.dll
+D:\work\like\Pratice\MVC\Project1\duo.CRM.IServices\bin\Release\duo.CRM.Model.pdb
+D:\work\like\Pratice\MVC\Project1\duo.CRM.IServices\bin\Release\EntityFramework.xml
+D:\work\like\Pratice\MVC\Project1\duo.CRM.IServices\bin\Release\zh-Hans\EntityFramework.resources.dll
+D:\work\like\Pratice\MVC\Project1\duo.CRM.IServices\obj\Release\duo.CRM.IServices.csprojResolveAssemblyReference.cache
+D:\work\like\Pratice\MVC\Project1\duo.CRM.IServices\obj\Release\duo.CRM.IServices.dll
+D:\work\like\Pratice\MVC\Project1\duo.CRM.IServices\obj\Release\duo.CRM.IServices.pdb

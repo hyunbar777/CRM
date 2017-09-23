@@ -1,0 +1,12 @@
+D:\work\like\Pratice\MVC\Project1\CRM.Model\bin\Release\duo.CRM.Model.dll.config
+D:\work\like\Pratice\MVC\Project1\CRM.Model\bin\Release\duo.CRM.Model.dll
+D:\work\like\Pratice\MVC\Project1\CRM.Model\bin\Release\duo.CRM.Model.pdb
+D:\work\like\Pratice\MVC\Project1\CRM.Model\bin\Release\EntityFramework.dll
+D:\work\like\Pratice\MVC\Project1\CRM.Model\bin\Release\EntityFramework.SqlServer.dll
+D:\work\like\Pratice\MVC\Project1\CRM.Model\bin\Release\EntityFramework.xml
+D:\work\like\Pratice\MVC\Project1\CRM.Model\bin\Release\EntityFramework.SqlServer.xml
+D:\work\like\Pratice\MVC\Project1\CRM.Model\bin\Release\zh-Hans\EntityFramework.resources.dll
+D:\work\like\Pratice\MVC\Project1\CRM.Model\bin\Release\zh-Hans\EntityFramework.SqlServer.resources.dll
+D:\work\like\Pratice\MVC\Project1\CRM.Model\obj\Release\duo.CRM.Model.csprojResolveAssemblyReference.cache
+D:\work\like\Pratice\MVC\Project1\CRM.Model\obj\Release\duo.CRM.Model.dll
+D:\work\like\Pratice\MVC\Project1\CRM.Model\obj\Release\duo.CRM.Model.pdb

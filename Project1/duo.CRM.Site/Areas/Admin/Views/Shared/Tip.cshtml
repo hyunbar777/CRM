@@ -1,0 +1,28 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Tip</title>
+ 
+    <link href="~/Content/Admin/ligerUI/skins/Aqua/css/ligerui-all.css" rel="stylesheet" />
+    <link href="~/Content/Admin/ligerUI/skins/ligerui-icons.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-1.7.1.js"></script>
+    <script src="~/Content/Admin/ligerUI/js/ligerui.all.js"></script>
+   
+</head>
+<body>
+    <script type="text/javascript">
+        $.ligerDialog.warn("您未登录，即将跳转到登录页面", "未登录提示", toUrl);
+        setTimeout(toUrl, 3000);
+        function toUrl() {
+            window.top.location = "/Admin/Login/Login";
+        }
+    </script>
+</body>
+</html>
