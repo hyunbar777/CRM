@@ -16,7 +16,7 @@ namespace duo.CRM.WebHelper
     public class CheckPermissAttr:ActionFilterAttribute
     {
 
-        public override void OnActionExecuted(ActionExecutedContext filterContext)
+        public override void OnActionExecuting(ActionExecutingContext filterContext)
         {
             //判断是否有贴跳过登录检查的特性标签
             if (filterContext.ActionDescriptor.ControllerDescriptor.IsDefined(typeof(SkipCheckPermiss), false))
@@ -41,19 +41,25 @@ namespace duo.CRM.WebHelper
             }
             //4.0根据上三个条件去当前用户权限按钮缓存数据中查找，如果没有表示没有权限
             //2.00先从缓存中获取autofac的容器对象
-            var cont = CacheMgr.GetData<IContainer>(Keys.AutofacContainer);
+           var cont = CacheMgr.GetData<IContainer>(Keys.AutofacContainer);
             IsysPermissListServices iperSer = cont.Resolve<IsysPermissListServices>();
             var list = iperSer.GetFunctionsForUserByCache(UserMgr.GetCurrentUserInfo().uID);
             var isOk = list.Any(c => c.mArea.ToLower() == areaName
               && c.mController.ToLower() == controllerName 
               && c.fFunction.ToLower() == actionName);
+            if (isOk == false)
+            {
+                isOk = list.Any(c=>c.mArea.ToLower()==areaName
+                && c.mController.ToLower()==controllerName
+                && c.mAction.ToLower() == actionName);
+            }
             if(isOk==false)
             {
                 ToLogin(filterContext);
             }
 
         }
-        private static void ToLogin(ActionExecutedContext filterContext)
+        private static void ToLogin(ActionExecutingContext filterContext)
         {
             //1.0判断挡前请求是否为一个ajax请求
             bool isAjaxRequest = filterContext.HttpContext.Request.IsAjaxRequest();

@@ -12,7 +12,6 @@ using System.Web.Mvc;
 
 namespace duo.CRM.Site.Areas.Admin.Controllers
 {
-    [SkipCheckPermiss]
     public class MenusController : BaseController
     {
         public MenusController(IsysMenusServices mSer)

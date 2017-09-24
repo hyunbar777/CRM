@@ -24,3 +24,9 @@ G:\PROJECT\crm\Project1\duo.CRM.Site\bin\duo.CRM.Services.pdb
 G:\PROJECT\crm\Project1\duo.CRM.Services\obj\Debug\duo.CRM.Services.csprojResolveAssemblyReference.cache
 G:\PROJECT\crm\Project1\duo.CRM.Services\obj\Debug\duo.CRM.Services.dll
 G:\PROJECT\crm\Project1\duo.CRM.Services\obj\Debug\duo.CRM.Services.pdb
+F:\PROJECT\crm\Project1\duo.CRM.Site\bin\duo.CRM.Services.dll.config
+F:\PROJECT\crm\Project1\duo.CRM.Site\bin\duo.CRM.Services.dll
+F:\PROJECT\crm\Project1\duo.CRM.Site\bin\duo.CRM.Services.pdb
+F:\PROJECT\crm\Project1\duo.CRM.Services\obj\Debug\duo.CRM.Services.csprojResolveAssemblyReference.cache
+F:\PROJECT\crm\Project1\duo.CRM.Services\obj\Debug\duo.CRM.Services.dll
+F:\PROJECT\crm\Project1\duo.CRM.Services\obj\Debug\duo.CRM.Services.pdb

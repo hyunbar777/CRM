@@ -14,7 +14,6 @@ namespace duo.CRM.Site.Areas.Admin.Controllers
 
     using Model;
     using EntityMapping;
-    [SkipCheckPermiss]
     public class OrganController : BaseController
     {
         public OrganController(IsysOrganStructServices organSer)

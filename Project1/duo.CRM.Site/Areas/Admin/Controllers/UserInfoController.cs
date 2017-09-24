@@ -13,13 +13,19 @@ namespace duo.CRM.Site.Areas.Admin.Controllers
     using Model.ModelViews;
     using Model;
     using EntityMapping;
-    [SkipCheckPermiss]
+
     public class UserInfoController : BaseController
     {
-        public UserInfoController(IsysUserInfoServices user, IsysOrganStructServices oser)
+        public UserInfoController(
+            IsysUserInfoServices user,
+            IsysOrganStructServices oser,
+            IsysRoleServices rser,
+            IsysUserInfo_RoleServices urser)
         {
             base._organSer = oser;
             base._userinfoSer = user;
+            base._roleSer = rser;
+            base._userinfoRoleSer = urser;
         }
         #region  1.0返回用户列表
         // GET: Admin/UserInfo
@@ -151,7 +157,7 @@ namespace duo.CRM.Site.Areas.Admin.Controllers
         /// 检查用户是否存在
         /// </summary>
         /// <returns></returns>
-
+        [SkipCheckPermiss]
         public ActionResult checkuser()
         {
             string username = Request.Form["uLoginName"];

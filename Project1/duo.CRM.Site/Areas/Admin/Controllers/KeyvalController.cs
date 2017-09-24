@@ -17,7 +17,7 @@ namespace duo.CRM.Site.Areas.Admin.Controllers
     using System.Configuration;
     using System.Data.Entity.Validation;
 
-    [SkipCheckPermiss]
+
     public class KeyvalController : BaseController
     {
 

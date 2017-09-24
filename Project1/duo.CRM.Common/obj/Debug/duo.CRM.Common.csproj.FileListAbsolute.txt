@@ -7,3 +7,7 @@ G:\PROJECT\crm\Project1\duo.CRM.Common\bin\Debug\duo.CRM.Common.dll
 G:\PROJECT\crm\Project1\duo.CRM.Common\bin\Debug\duo.CRM.Common.pdb
 G:\PROJECT\crm\Project1\duo.CRM.Common\obj\Debug\duo.CRM.Common.dll
 G:\PROJECT\crm\Project1\duo.CRM.Common\obj\Debug\duo.CRM.Common.pdb
+F:\PROJECT\crm\Project1\duo.CRM.Common\bin\Debug\duo.CRM.Common.dll
+F:\PROJECT\crm\Project1\duo.CRM.Common\bin\Debug\duo.CRM.Common.pdb
+F:\PROJECT\crm\Project1\duo.CRM.Common\obj\Debug\duo.CRM.Common.dll
+F:\PROJECT\crm\Project1\duo.CRM.Common\obj\Debug\duo.CRM.Common.pdb
