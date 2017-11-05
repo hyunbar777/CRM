@@ -1,0 +1,82 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>setRole</title>
+    <script>
+        $(function () { getRoleList(); })
+
+        var wkid = '@ViewBag.wkid';
+        var uid = '@ViewBag.uid';
+        var grid;
+        function getRoleList() {
+            grid = $("#list").ligerGrid({
+                url: "/Admin/UserInfo/getRoleList/" + uid + "-" + wkid,
+                columns: [
+                    { display: "角色名称", name: "rName" }
+                ],
+                userPager: false,
+                checkbox: true,
+                toolbar: {
+                    items: [
+                         { text: "确认", click: setUserRole, icon: "ok" },
+                        { line: true },
+                        { text: "关闭", click: function () { window.parent.helper.win.close(); }, icon: "delete" }
+                    ]
+                },
+                isChecked: function (rowData) {
+                    return rowData.ischecked;
+                 
+                }
+            })
+        };
+
+        function setUserRole() {
+            var userid = uid;
+            var rows = grid.getSelectedRows();
+            if (rows == null || rows.length == 0) {
+                helper.warnTip("请至少给用户分配一个角色"); return;
+            }
+            var rids = "";
+            for (var i = 0; i < rows.length; i++) {
+                rids += rows[i].rID + ",";
+            }
+            var parms = userid + "-" + rids;
+            $.post("/Admin/UserInfo/setUserRole/" + parms, null, function (ajaxObj) {
+                helper.checkStatus(ajaxObj, function () {
+                    helper.successTip("用户角色分配成功");
+                    setTimeout(function () {
+                        window.parent.helper.win.close();
+                    }, 2000);
+                });
+            }, "json");
+        }
+    </script>
+</head>
+<body>
+    <div id="content">
+        <div style="height: 100%;">
+            <div id="content-body" class="row-fluid">
+                <div class="span22">
+                    <!--列表-->
+                    <div class="widget-box">
+                        <div class="widget-title">
+                            <span class="icon"><i class="icon-th"></i></span>
+                            <h5>角色列表</h5>
+                        </div>
+                        <div id="list" class="widget-content nopadding">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>

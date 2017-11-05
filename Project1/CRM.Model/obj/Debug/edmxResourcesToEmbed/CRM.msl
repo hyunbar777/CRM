@@ -115,7 +115,7 @@
           <ScalarProperty Name="uStatus" ColumnName="uStatus" />
           <ScalarProperty Name="uCompanyID" ColumnName="uCompanyID" />
           <ScalarProperty Name="uDepID" ColumnName="uDepID" />
-          <ScalarProperty Name="uWorkGroup" ColumnName="uWorkGroup" />
+          <ScalarProperty Name="uWorkGroupID" ColumnName="uWorkGroupID" />
           <ScalarProperty Name="uRemark" ColumnName="uRemark" />
           <ScalarProperty Name="uCreateID" ColumnName="uCreateID" />
           <ScalarProperty Name="uCreateTime" ColumnName="uCreateTime" />

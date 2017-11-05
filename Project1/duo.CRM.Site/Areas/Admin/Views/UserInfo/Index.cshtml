@@ -109,9 +109,19 @@
                 }, "json");
             });
         }
-
+        //设置用户角色
         function setrole() {
+            var row = grid.getSelectedRow();
+            if (!row) {
+                helper.warnTip("请选择一个用户");
+                return;
+            }
 
+            var uid = row.uID;
+            var wkid = row.uWorkGroupID;
+            
+            var uidkwkid = uid + "-" + wkid;
+            helper.openPanel("设置用户角色", "/Admin/UserInfo/setRole/" + uidkwkid);
         }
     </script>
 </head>

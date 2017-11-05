@@ -114,7 +114,7 @@
           <Property Name="uStatus" Type="int" Nullable="false" />
           <Property Name="uCompanyID" Type="int" Nullable="false" />
           <Property Name="uDepID" Type="int" />
-          <Property Name="uWorkGroup" Type="int" />
+          <Property Name="uWorkGroupID" Type="int" />
           <Property Name="uRemark" Type="nvarchar" MaxLength="500" />
           <Property Name="uCreateID" Type="int" Nullable="false" />
           <Property Name="uCreateTime" Type="datetime" Nullable="false" />
@@ -533,7 +533,7 @@
           <Property Name="uStatus" Type="Int32" Nullable="false" />
           <Property Name="uCompanyID" Type="Int32" Nullable="false" />
           <Property Name="uDepID" Type="Int32" />
-          <Property Name="uWorkGroup" Type="Int32" />
+          <Property Name="uWorkGroupID" Type="Int32" />
           <Property Name="uRemark" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
           <Property Name="uCreateID" Type="Int32" Nullable="false" />
           <Property Name="uCreateTime" Type="DateTime" Nullable="false" Precision="3" />
@@ -999,7 +999,7 @@
                 <ScalarProperty Name="uStatus" ColumnName="uStatus" />
                 <ScalarProperty Name="uCompanyID" ColumnName="uCompanyID" />
                 <ScalarProperty Name="uDepID" ColumnName="uDepID" />
-                <ScalarProperty Name="uWorkGroup" ColumnName="uWorkGroup" />
+                <ScalarProperty Name="uWorkGroupID" ColumnName="uWorkGroupID" />
                 <ScalarProperty Name="uRemark" ColumnName="uRemark" />
                 <ScalarProperty Name="uCreateID" ColumnName="uCreateID" />
                 <ScalarProperty Name="uCreateTime" ColumnName="uCreateTime" />

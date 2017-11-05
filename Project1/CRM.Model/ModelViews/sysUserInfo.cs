@@ -32,7 +32,7 @@ namespace duo.CRM.Model.ModelViews
         public Nullable<int> uDepID { get; set; }
         public Nullable<int> uWorkGroupID { get; set; }
         public string uRemark { get; set; }
-        public int uCreatorID { get; set; }
+        public int uCreateID { get; set; }
         public System.DateTime uCreateTime { get; set; }
         public Nullable<int> uUpdateID { get; set; }
         public System.DateTime uUpdateTime { get; set; }

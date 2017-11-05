@@ -109,7 +109,7 @@
     <Property Name="uStatus" Type="int" Nullable="false" />
     <Property Name="uCompanyID" Type="int" Nullable="false" />
     <Property Name="uDepID" Type="int" />
-    <Property Name="uWorkGroup" Type="int" />
+    <Property Name="uWorkGroupID" Type="int" />
     <Property Name="uRemark" Type="nvarchar" MaxLength="500" />
     <Property Name="uCreateID" Type="int" Nullable="false" />
     <Property Name="uCreateTime" Type="datetime" Nullable="false" />
