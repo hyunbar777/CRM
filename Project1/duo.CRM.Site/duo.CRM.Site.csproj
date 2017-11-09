@@ -675,6 +675,8 @@
     <Content Include="Areas\Admin\Views\Function\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Function\add.cshtml" />
     <Content Include="Areas\Admin\Views\UserInfo\setRole.cshtml" />
+    <Content Include="Areas\Admin\Views\Role\Index.cshtml" />
+    <Content Include="Areas\Admin\Views\Role\setPermiss.cshtml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -715,6 +717,7 @@
     <Compile Include="Areas\Admin\Controllers\MenusController.cs" />
     <Compile Include="Areas\Admin\Controllers\OrganController.cs" />
     <Compile Include="Areas\Admin\Controllers\PermissOptController.cs" />
+    <Compile Include="Areas\Admin\Controllers\RoleController.cs" />
     <Compile Include="Areas\Admin\Controllers\UserInfoController.cs" />
     <Compile Include="Areas\Admin\Controllers\VCodeController.cs" />
     <Compile Include="Controllers\HomeController.cs" />

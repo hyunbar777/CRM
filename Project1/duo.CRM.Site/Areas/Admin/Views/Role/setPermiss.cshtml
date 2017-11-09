@@ -1,0 +1,49 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>setPermiss</title>
+    <script>
+        $(function(){
+            getMFTree();
+        })
+        var tree;
+        var rid = '@ViewBag.rid';
+        function getMFTree (){
+            tree = $("#mftree").ligerTree({
+                url: "/Admin/Role/getmfTree/" + rid,
+                textFieldName: "Name",
+                idFieldName: "id",
+                parentIDFieldName: "pid",
+                checkbox: true,
+                autoCheckboxEven: false //关闭复选框的联动效果
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="content" style="margin-top: 15px;">
+        <div style="height: 100%;">
+            <div id="content-body" class="row-fluid">
+                <div class="span22">
+                    <!--列表-->
+                    <div>
+                        <input type="button" value="保存" onclick="savedata()" />
+                        <input type="button" value="关闭" onclick="window.parent.helper.win.close()" />
+                    </div>
+                    <div class="widget-box">
+                        <ul id="mftree"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
