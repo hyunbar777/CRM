@@ -11,42 +11,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>add</title>
-    <script type="text/javascript">
-          //负责根据选择的公司id获取此公司下的所有部门
-          function loadDep(t) {
-              var companyid = t.value;
-              $.post("/Admin/UserInfo/getDep/" + companyid, null, function (ajaxobj) {
-                  helper.checkStatus(ajaxobj, function () {
-
-                      var sel = document.getElementById("uDepID");
-                      sel.options.length = 0;
-                      var items = ajaxobj.datas;
-                      for (var i = 0; i < items.length; i++) {
-                          var opt = new Option(items[i].osName, items[i].osID);
-                          sel.options.add(opt);
-                      }
-                  });
-              }, "json");
-          }
-          //根据选择的部门获取此部门下的所有工作组
-          function loadWk(t) {
-              var companyid = t.value;
-              $.post("/Admin/UserInfo/getDep/" + companyid, null, function (ajaxobj) {
-                  helper.checkStatus(ajaxobj, function () {
-                      //将数据填充到部门下拉框中
-                      var sel = document.getElementById("uWorkGroupID");
-                      sel.options.length = 0;
-                      var items = ajaxobj.datas;
-                      for (var i = 0; i < items.length; i++) {
-                          var opt = new Option(items[i].osName, items[i].osID);
-
-                          sel.options.add(opt);
-                      }
-
-                  });
-              }, "json");
-          }
-    </script>
+   
 </head>
 <body>
     <div style="margin: 15px">
@@ -143,5 +108,41 @@
    <script src="~/Scripts/jquery.validate.js"></script>
     <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
     <script src="~/Scripts/jquery.unobtrusive-ajax.js"></script>
+    <script type="text/javascript">
+          //负责根据选择的公司id获取此公司下的所有部门
+          function loadDep(t) {
+              var companyid = t.value;
+              $.post("/Admin/UserInfo/getDep/" + companyid, null, function (ajaxobj) {
+                  helper.checkStatus(ajaxobj, function () {
+
+                      var sel = document.getElementById("uDepID");
+                      sel.options.length = 0;
+                      var items = ajaxobj.datas;
+                      for (var i = 0; i < items.length; i++) {
+                          var opt = new Option(items[i].osName, items[i].osID);
+                          sel.options.add(opt);
+                      }
+                  });
+              }, "json");
+          }
+          //根据选择的部门获取此部门下的所有工作组
+          function loadWk(t) {
+              var companyid = t.value;
+              $.post("/Admin/UserInfo/getDep/" + companyid, null, function (ajaxobj) {
+                  helper.checkStatus(ajaxobj, function () {
+                      //将数据填充到部门下拉框中
+                      var sel = document.getElementById("uWorkGroupID");
+                      sel.options.length = 0;
+                      var items = ajaxobj.datas;
+                      for (var i = 0; i < items.length; i++) {
+                          var opt = new Option(items[i].osName, items[i].osID);
+
+                          sel.options.add(opt);
+                      }
+
+                  });
+              }, "json");
+          }
+    </script>
 </body>
 </html>

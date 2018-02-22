@@ -98,7 +98,7 @@ namespace duo.CRM.Site.Areas.Admin.Controllers
         #region 帮助方法
         private void SetCompany()
         {
-            var aa = Request.Cookies[Keys.IsMember].Value;
+         //   var aa = Request.Cookies[Keys.IsMember].Value;
             var list = _organSer.QueryWhere(c => c.osCateID == 1);
             list.Insert(0, new sysOrganStruct()
             {
@@ -109,8 +109,9 @@ namespace duo.CRM.Site.Areas.Admin.Controllers
             ViewBag.company = clist;
         }
         #endregion
-        [HttpGet]
+
         #region 2.0 新增
+        [HttpGet]
         public ActionResult add()
         {
             SetStatus();

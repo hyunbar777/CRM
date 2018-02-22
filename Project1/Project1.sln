@@ -1,14 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+VisualStudioVersion = 14.0.23107.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "01-实体层", "01-实体层", "{AF35CF32-0145-44B2-85A1-220F4AF900F9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "02-数据仓储曾", "02-数据仓储曾", "{C1B482DC-975C-47EF-B9DC-05007FB4F346}"
-	ProjectSection(SolutionItems) = preProject
-		..\..\..\NET\9.MVC\20140921 MVC大项目第3天 记住3天 动态生成菜单 layout和Tab布局\源码\itcast.CRM15.Site\App_Start\AutofacConfig.cs = ..\..\..\NET\9.MVC\20140921 MVC大项目第3天 记住3天 动态生成菜单 layout和Tab布局\源码\itcast.CRM15.Site\App_Start\AutofacConfig.cs
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "03-业务逻辑层", "03-业务逻辑层", "{EBC15463-6D1D-43F4-B4A6-EAC114FC1EB8}"
 EndProject
