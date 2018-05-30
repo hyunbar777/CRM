@@ -71,7 +71,7 @@ namespace duo.CRM.Site.Areas.Admin.Controllers
                 string md5PWD = Kits.MD5Entry(model.uLoginPWD);
                 var userinfo = _userinfoSer.QueryWhere(
                     c => c.uLoginName == model.uLoginName
-                && c.uLoginPWD == model.uLoginPWD).FirstOrDefault();
+                && c.uLoginPWD == md5PWD).FirstOrDefault();
                 if (userinfo == null)
                 {
                     return WriteError("用户名或密码错误");

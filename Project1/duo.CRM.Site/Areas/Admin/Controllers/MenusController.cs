@@ -31,7 +31,7 @@ namespace duo.CRM.Site.Areas.Admin.Controllers
         /// 负责接收index.cshtml中的 ligerGrid的ajax请求，post
         /// </summary>
         /// <returns></returns>
-        [HttpPost]
+        [HttpPost,SkipCheckPermiss]
         public ActionResult getlist()
         {
             //1.0根据条件获取index.cshtml上所有字段

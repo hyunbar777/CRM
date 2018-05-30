@@ -15,6 +15,7 @@
     <Property Name="fUpdateID" Type="Int32" />
     <Property Name="fUpdateTime" Type="DateTime" Nullable="false" Precision="3" />
     <NavigationProperty Name="sysMenus" Relationship="Self.FK_sysFucntion_sysMenus" FromRole="sysFunction" ToRole="sysMenus" />
+    <NavigationProperty Name="sysPermissList" Relationship="ASPPROJECT1Model.FK_sysPermissList_sysMenus1" FromRole="sysFunction" ToRole="sysPermissList" />
   </EntityType>
   <EntityType Name="sysKeyValue">
     <Key>
@@ -41,7 +42,7 @@
     <Property Name="mAction" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
     <Property Name="mSortID" Type="Int32" Nullable="false" />
     <Property Name="mStatus" Type="Int32" Nullable="false" />
-    <Property Name="mPicture" Type="String" MaxLength="30" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="mPicture" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
     <Property Name="mLevel" Type="Int32" Nullable="false" />
     <Property Name="mExp1" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="mExp2" Type="Int32" />
@@ -83,6 +84,7 @@
     <Property Name="plCreateTime" Type="DateTime" Nullable="false" Precision="3" />
     <NavigationProperty Name="sysMenus" Relationship="Self.FK_sysPermissList_sysMenus" FromRole="sysPermissList" ToRole="sysMenus" />
     <NavigationProperty Name="sysRole" Relationship="Self.FK_sysPermissList_sysRole" FromRole="sysPermissList" ToRole="sysRole" />
+    <NavigationProperty Name="sysFunction" Relationship="ASPPROJECT1Model.FK_sysPermissList_sysMenus1" FromRole="sysPermissList" ToRole="sysFunction" />
   </EntityType>
   <EntityType Name="sysRole">
     <Key>
@@ -426,6 +428,10 @@
     <FunctionImport Name="Usp_GetPermissMenusForUser" ReturnType="Collection(ASPPROJECT1Model.Usp_GetPermissMenusForUser_Result)">
       <Parameter Name="uid" Mode="In" Type="Int32" />
     </FunctionImport>
+    <AssociationSet Name="FK_sysPermissList_sysMenus1" Association="ASPPROJECT1Model.FK_sysPermissList_sysMenus1">
+      <End Role="sysFunction" EntitySet="sysFunction" />
+      <End Role="sysPermissList" EntitySet="sysPermissList" />
+    </AssociationSet>
   </EntityContainer>
   <ComplexType Name="Usp_GetFunctionsForUserid_Result">
     <Property Type="String" Name="fName" Nullable="false" MaxLength="100" />
@@ -464,4 +470,16 @@
     <Property Type="Int32" Name="mUpdateID" Nullable="true" />
     <Property Type="DateTime" Name="mUpdateTime" Nullable="false" Precision="23" />
   </ComplexType>
+  <Association Name="FK_sysPermissList_sysMenus1">
+    <End Type="ASPPROJECT1Model.sysFunction" Role="sysFunction" Multiplicity="1" />
+    <End Type="ASPPROJECT1Model.sysPermissList" Role="sysPermissList" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="sysFunction">
+        <PropertyRef Name="fID" />
+      </Principal>
+      <Dependent Role="sysPermissList">
+        <PropertyRef Name="fID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
 </Schema>

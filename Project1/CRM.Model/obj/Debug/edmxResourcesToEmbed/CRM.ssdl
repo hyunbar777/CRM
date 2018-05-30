@@ -39,7 +39,7 @@
     <Property Name="mAction" Type="nvarchar(max)" />
     <Property Name="mSortID" Type="int" Nullable="false" />
     <Property Name="mStatus" Type="int" Nullable="false" />
-    <Property Name="mPicture" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="mPicture" Type="varchar" MaxLength="30" />
     <Property Name="mLevel" Type="int" Nullable="false" />
     <Property Name="mExp1" Type="nvarchar" MaxLength="50" />
     <Property Name="mExp2" Type="int" />
@@ -217,27 +217,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_sysOrganStruct_sysKeyValue">
-    <End Role="sysKeyValue" Type="Self.sysKeyValue" Multiplicity="1" />
-    <End Role="sysOrganStruct" Type="Self.sysOrganStruct" Multiplicity="*" />
-    <ReferentialConstraint>
-      <Principal Role="sysKeyValue">
-        <PropertyRef Name="KID" />
-      </Principal>
-      <Dependent Role="sysOrganStruct">
-        <PropertyRef Name="osCateID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_sysPermissList_sysMenus">
-    <End Role="sysMenus" Type="Self.sysMenus" Multiplicity="1" />
+  <Association Name="FK_sysPermissList_sysMenus1">
+    <End Role="sysFunction" Type="Self.sysFunction" Multiplicity="1" />
     <End Role="sysPermissList" Type="Self.sysPermissList" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="sysMenus">
-        <PropertyRef Name="mID" />
+      <Principal Role="sysFunction">
+        <PropertyRef Name="fID" />
       </Principal>
       <Dependent Role="sysPermissList">
-        <PropertyRef Name="mID" />
+        <PropertyRef Name="fID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -364,12 +352,8 @@
       <End Role="sysMenus" EntitySet="sysMenus" />
       <End Role="sysFunction" EntitySet="sysFunction" />
     </AssociationSet>
-    <AssociationSet Name="FK_sysOrganStruct_sysKeyValue" Association="Self.FK_sysOrganStruct_sysKeyValue">
-      <End Role="sysKeyValue" EntitySet="sysKeyValue" />
-      <End Role="sysOrganStruct" EntitySet="sysOrganStruct" />
-    </AssociationSet>
-    <AssociationSet Name="FK_sysPermissList_sysMenus" Association="Self.FK_sysPermissList_sysMenus">
-      <End Role="sysMenus" EntitySet="sysMenus" />
+    <AssociationSet Name="FK_sysPermissList_sysMenus1" Association="Self.FK_sysPermissList_sysMenus1">
+      <End Role="sysFunction" EntitySet="sysFunction" />
       <End Role="sysPermissList" EntitySet="sysPermissList" />
     </AssociationSet>
     <AssociationSet Name="FK_sysPermissList_sysRole" Association="Self.FK_sysPermissList_sysRole">

@@ -30,3 +30,11 @@ F:\PROJECT\crm\Project1\duo.CRM.Site\bin\duo.CRM.Services.pdb
 F:\PROJECT\crm\Project1\duo.CRM.Services\obj\Debug\duo.CRM.Services.csprojResolveAssemblyReference.cache
 F:\PROJECT\crm\Project1\duo.CRM.Services\obj\Debug\duo.CRM.Services.dll
 F:\PROJECT\crm\Project1\duo.CRM.Services\obj\Debug\duo.CRM.Services.pdb
+E:\github\CRM\Project1\duo.CRM.Site\bin\duo.CRM.Services.dll.config
+E:\github\CRM\Project1\duo.CRM.Site\bin\duo.CRM.Services.dll
+E:\github\CRM\Project1\duo.CRM.Site\bin\duo.CRM.Services.pdb
+E:\github\CRM\Project1\duo.CRM.Services\obj\Debug\duo.CRM.Services.csprojAssemblyReference.cache
+E:\github\CRM\Project1\duo.CRM.Services\obj\Debug\duo.CRM.Services.csproj.CoreCompileInputs.cache
+E:\github\CRM\Project1\duo.CRM.Services\obj\Debug\duo.CRM.Services.csproj.CopyComplete
+E:\github\CRM\Project1\duo.CRM.Services\obj\Debug\duo.CRM.Services.dll
+E:\github\CRM\Project1\duo.CRM.Services\obj\Debug\duo.CRM.Services.pdb

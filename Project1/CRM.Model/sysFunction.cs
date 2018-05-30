@@ -14,6 +14,12 @@ namespace duo.CRM.Model
     
     public partial class sysFunction
     {
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public sysFunction()
+        {
+            this.sysPermissList = new HashSet<sysPermissList>();
+        }
+    
         public int fID { get; set; }
         public int mID { get; set; }
         public string fName { get; set; }
@@ -26,5 +32,7 @@ namespace duo.CRM.Model
         public System.DateTime fUpdateTime { get; set; }
     
         public virtual sysMenus sysMenus { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<sysPermissList> sysPermissList { get; set; }
     }
 }

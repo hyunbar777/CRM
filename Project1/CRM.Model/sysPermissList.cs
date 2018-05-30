@@ -23,5 +23,6 @@ namespace duo.CRM.Model
     
         public virtual sysMenus sysMenus { get; set; }
         public virtual sysRole sysRole { get; set; }
+        public virtual sysFunction sysFunction { get; set; }
     }
 }

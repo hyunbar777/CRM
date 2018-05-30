@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -677,6 +678,7 @@
     <Content Include="Areas\Admin\Views\UserInfo\setRole.cshtml" />
     <Content Include="Areas\Admin\Views\Role\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Role\setPermiss.cshtml" />
+    <Content Include="Areas\WorkFlow\Views\web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
@@ -720,6 +722,7 @@
     <Compile Include="Areas\Admin\Controllers\RoleController.cs" />
     <Compile Include="Areas\Admin\Controllers\UserInfoController.cs" />
     <Compile Include="Areas\Admin\Controllers\VCodeController.cs" />
+    <Compile Include="Areas\WorkFlow\WorkFlowAreaRegistration.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -747,6 +750,9 @@
     <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Areas\Admin\Views\PermissOpt\" />
     <Folder Include="Areas\Admin\Views\VCode\" />
+    <Folder Include="Areas\WorkFlow\Controllers\" />
+    <Folder Include="Areas\WorkFlow\Models\" />
+    <Folder Include="Areas\WorkFlow\Views\Shared\" />
     <Folder Include="Content\Themes\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Home\" />

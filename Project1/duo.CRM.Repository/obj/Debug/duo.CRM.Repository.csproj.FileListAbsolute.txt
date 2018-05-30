@@ -28,3 +28,11 @@ F:\PROJECT\crm\Project1\duo.CRM.Site\bin\duo.CRM.Repository.pdb
 F:\PROJECT\crm\Project1\duo.CRM.Repository\obj\Debug\duo.CRM.Repository.csprojResolveAssemblyReference.cache
 F:\PROJECT\crm\Project1\duo.CRM.Repository\obj\Debug\duo.CRM.Repository.dll
 F:\PROJECT\crm\Project1\duo.CRM.Repository\obj\Debug\duo.CRM.Repository.pdb
+E:\github\CRM\Project1\duo.CRM.Site\bin\duo.CRM.Repository.dll.config
+E:\github\CRM\Project1\duo.CRM.Site\bin\duo.CRM.Repository.dll
+E:\github\CRM\Project1\duo.CRM.Site\bin\duo.CRM.Repository.pdb
+E:\github\CRM\Project1\duo.CRM.Repository\obj\Debug\duo.CRM.Repository.csprojAssemblyReference.cache
+E:\github\CRM\Project1\duo.CRM.Repository\obj\Debug\duo.CRM.Repository.csproj.CoreCompileInputs.cache
+E:\github\CRM\Project1\duo.CRM.Repository\obj\Debug\duo.CRM.Repository.csproj.CopyComplete
+E:\github\CRM\Project1\duo.CRM.Repository\obj\Debug\duo.CRM.Repository.dll
+E:\github\CRM\Project1\duo.CRM.Repository\obj\Debug\duo.CRM.Repository.pdb

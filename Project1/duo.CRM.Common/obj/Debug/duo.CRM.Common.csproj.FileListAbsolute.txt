@@ -12,3 +12,9 @@ F:\PROJECT\crm\Project1\duo.CRM.Common\bin\Debug\duo.CRM.Common.pdb
 F:\PROJECT\crm\Project1\duo.CRM.Common\obj\Debug\duo.CRM.Common.dll
 F:\PROJECT\crm\Project1\duo.CRM.Common\obj\Debug\duo.CRM.Common.pdb
 F:\PROJECT\crm\Project1\duo.CRM.Common\obj\Debug\duo.CRM.Common.csprojResolveAssemblyReference.cache
+E:\github\CRM\Project1\duo.CRM.Common\bin\Debug\duo.CRM.Common.dll
+E:\github\CRM\Project1\duo.CRM.Common\bin\Debug\duo.CRM.Common.pdb
+E:\github\CRM\Project1\duo.CRM.Common\obj\Debug\duo.CRM.Common.csprojAssemblyReference.cache
+E:\github\CRM\Project1\duo.CRM.Common\obj\Debug\duo.CRM.Common.csproj.CoreCompileInputs.cache
+E:\github\CRM\Project1\duo.CRM.Common\obj\Debug\duo.CRM.Common.dll
+E:\github\CRM\Project1\duo.CRM.Common\obj\Debug\duo.CRM.Common.pdb

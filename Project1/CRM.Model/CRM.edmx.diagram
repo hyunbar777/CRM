@@ -29,6 +29,7 @@
         <AssociationConnector Association="ASPPROJECT1Model.FK_wfRequestForm_wfWork" ManuallyRouted="false" />
         <AssociationConnector Association="ASPPROJECT1Model.FK_wfWorkNodes_wfWork" ManuallyRouted="false" />
         <AssociationConnector Association="ASPPROJECT1Model.FK_wfWorkBranch_wfWorkNodes1" ManuallyRouted="false" />
+        <AssociationConnector Association="ASPPROJECT1Model.FK_sysPermissList_sysMenus1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
