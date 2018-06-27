@@ -80,3 +80,4 @@ E:\github\CRM\Project1\CRM.Model\obj\Debug\duo.CRM.Model.csproj.CoreCompileInput
 E:\github\CRM\Project1\CRM.Model\obj\Debug\duo.CRM.Model.csproj.CopyComplete
 E:\github\CRM\Project1\CRM.Model\obj\Debug\duo.CRM.Model.dll
 E:\github\CRM\Project1\CRM.Model\obj\Debug\duo.CRM.Model.pdb
+E:\github\CRM\Project1\CRM.Model\obj\Debug\duo.CRM.Model.csprojAssemblyReference.cache
